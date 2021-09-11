@@ -1,0 +1,22 @@
+export default {
+    //保存token
+    getToken(state,payload){
+        state.token=payload
+    },
+    //存储我的信息
+    getLoginData(state,payload){
+     state.profile=payload
+    },
+    //存储我喜欢的音乐的id
+    getSonsListByid(state,id){
+        state.myLikeId=id
+    },
+    //存储当前播放音乐的地址
+    getCurrnetUrl(state,url){
+        state.currentUrl=url
+    },
+    //存储当前播放音乐的信息
+    getCuurentXinxi(state,xinxi){
+        state.currentXinxi=xinxi
+    }
+}
